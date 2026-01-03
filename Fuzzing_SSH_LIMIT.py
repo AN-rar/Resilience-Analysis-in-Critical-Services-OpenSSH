@@ -1,7 +1,7 @@
 import scapy
 import socket
 
-LHOST = "127.0.0.1"
+LHOST = "127.0.0.1" #La IP objetivo/ de la VM 
 PORT = 22
 
 Cantidad = [100, 500, 1000, 5000, 10000]
@@ -22,3 +22,4 @@ for i in Cantidad:
     except Exception as e:
         print(f"[!] El servicio cayo o bloque la conexion en {i} bytes: {e}")
         break
+
